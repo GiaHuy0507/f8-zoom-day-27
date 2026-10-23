@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/tender.css" />
+    <title>Tinder Swipe Card Experience</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header -->
+      <header class="app-header">
+        <div class="brand-title">🔥 MatchFinder</div>
+        <div class="counter-badge">
+          <span class="badge-disliked"
+            >✕ <span id="disliked-count">0</span></span
+          >
+          <span class="badge-liked">♥ <span id="liked-count">0</span></span>
+        </div>
+      </header>
+
+      <!-- Khu vực chứa các thẻ Card -->
+      <main class="card-deck" id="card-deck">
+        <div class="empty-state" id="empty-state">
+          <div style="font-size: 48px">✨</div>
+          <h3>Bạn đã xem hết hồ sơ hiện tại!</h3>
+          <button class="btn-reload" id="btn-reload">Xem lại danh sách</button>
+        </div>
+      </main>
+
+      <!-- Thanh điều khiển nút bấm phía dưới -->
+      <footer class="app-actions">
+        <button
+          class="action-btn btn-dislike"
+          id="action-dislike"
+          title="Quẹt trái"
+        >
+          ✕
+        </button>
+        <button class="action-btn btn-like" id="action-like" title="Quẹt phải">
+          ♥
+        </button>
+      </footer>
+    </div>
+
+    <script src="./js/tender.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Code Editor</title>
+    <link rel="stylesheet" href="./css/livecode.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Bên trái: Editor -->
+      <div class="panel editor-panel">
+        <div class="panel-header">
+          <h2>HTML / CSS Editor</h2>
+          <span>Live Editing</span>
+        </div>
+
+        <textarea
+          id="code-editor"
+          spellcheck="false"
+          placeholder="Nhập HTML, CSS của bạn tại đây..."
+        ></textarea>
+      </div>
+
+      <!-- Bên phải: Preview -->
+      <div class="panel">
+        <div class="panel-header">
+          <h2>Live Preview</h2>
+          <span>Auto Update</span>
+        </div>
+
+        <iframe
+          id="preview"
+          title="Live code preview"
+          sandbox="allow-scripts"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Context menu tùy chỉnh -->
+    <div class="context-menu" id="context-menu">
+      <button class="menu-item delete-item" id="delete-code">
+        🗑 Xóa code
+      </button>
+    </div>
+
+    <script src="./js/live-code-editor.js"></script>
+  </body>
+</html>
